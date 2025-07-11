@@ -45,23 +45,25 @@ export default function Cognition() {
         {/* "GitHub Presents" text */}
 
         <Words />
-        <motion.div
-          className="text-white font-thin text-2xl md:text-3xl"
-          whileHover={{ scale: 1.05, fontWeight: 700 }}
-          transition={{ duration: 0.3 }}
-        >
-          GitHub Presents
-        </motion.div>
-        {/* Two images side by side and centered */}
-        <div className="flex items-center justify-center space-x-6">
-          {/* Left image */}
+        <div className="items-center justify-center space-x-6 flex">
           <motion.img
             src="./github-education-logo.jpeg" // replace with your left image
             alt="Left"
-            className="w-24 md:w-28 object-cover rounded-full"
+            className="w-12 md:w-16 object-cover rounded-full"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           />
+          <motion.div
+            className="text-white font-thin text-2xl md:text-3xl"
+            whileHover={{ scale: 1.05, fontWeight: 700 }}
+            transition={{ duration: 0.3 }}
+          >
+            GitHub Presents
+          </motion.div>
+        </div>
+        {/* Two images side by side and centered */}
+        <div className="flex items-center justify-center space-x-6">
+          {/* Left image */}
 
           {/* Cognition image */}
           <motion.img
