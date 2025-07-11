@@ -79,11 +79,11 @@ export default function Cognition() {
         <div className="flex space-x-4">
           <a
             className="mt-6 inline-block bg-white text-yellow-600 hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800 hover:text-white px-5 py-3 rounded-lg text-sm md:text-lg font-bold transition-colors duration-500 hover:shadow-lg"
-            href="/"
+            href="https://www.commudle.com/fill-form/3597"
           >
             Call for Registration
             <span className="text-sm text-gray-600 text-center hover:text-black block">
-              (COMING SOON)
+              (OPEN NOW!!!)
             </span>
           </a>
 
