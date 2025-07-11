@@ -4,6 +4,7 @@ import Cognition from "../components/Cognition";
 import Widget from "../components/Widget";
 import Footer from "../components/Footer";
 import SponsorForm from "../components/SponsorForm";
+import Sponsor from "../components/Sponsors";
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -130,6 +131,7 @@ export default function Home() {
         <div ref={aboutRef}>
           <Widget />
         </div>
+        <Sponsor />
         <div ref={contactRef}>
           <SponsorForm />
         </div>

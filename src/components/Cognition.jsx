@@ -12,16 +12,7 @@ export default function Cognition() {
 
   return (
     <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden">
-      {/* <style>
-        {`
-          @media (max-width: 1024px) {
-            div[style] { background-size: 75% !important; }
-          }
-          @media (max-width: 768px) {
-            div[style] { background-size: cover !important; }
-          }
-        `}
-      </style> */}
+      {/* Yellow Floating Frames */}
       {frames.map((frame, index) => (
         <motion.div
           key={index}
@@ -51,21 +42,45 @@ export default function Cognition() {
 
       {/* Text and Buttons */}
       <div className="relative flex flex-col items-center justify-center space-y-4">
+        {/* "GitHub Presents" text */}
+
         <Words />
         <motion.div
-          className="md:w-[750px] w-96"
-          whileHover={{ scale: 1.1, letterSpacing: "2px" }}
+          className="text-white font-thin text-2xl md:text-3xl"
+          whileHover={{ scale: 1.05, fontWeight: 700 }}
           transition={{ duration: 0.3 }}
         >
-          <img src="./cognition.png" alt="" />
+          GitHub Presents
         </motion.div>
+        {/* Two images side by side and centered */}
+        <div className="flex items-center justify-center space-x-6">
+          {/* Left image */}
+          <motion.img
+            src="./github-education-logo.jpeg" // replace with your left image
+            alt="Left"
+            className="w-24 md:w-28 object-cover rounded-full"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          />
+
+          {/* Cognition image */}
+          <motion.img
+            src="./cognition.png"
+            alt="Cognition"
+            className="w-72 md:w-96"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          />
+        </div>
+
+        {/* Buttons */}
         <div className="flex space-x-4">
           <a
             className="mt-6 inline-block bg-white text-yellow-600 hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800 hover:text-white px-5 py-3 rounded-lg text-sm md:text-lg font-bold transition-colors duration-500 hover:shadow-lg"
             href="/"
           >
             Call for Registration
-            <span className="text-sm text-gray-600 text-center hover:text-black">
+            <span className="text-sm text-gray-600 text-center hover:text-black block">
               (COMING SOON)
             </span>
           </a>
